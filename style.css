@@ -7,7 +7,7 @@ body {
     width: 100vw;
     display: grid;
     grid-template-columns: 1fr 3fr;
-    grid-template-rows: 1fr 5fr;
+    grid-template-rows: 130px 5fr;
 }
 
 .sidebar {
@@ -51,6 +51,51 @@ li {
 
 .header {
     background-color: bisque;
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.headerContainer {
+    display: grid;
+    grid-template-columns: 1fr 250px;
+    height: 40px;
+    align-items: center;
+}
+
+.headerSearch input {
+    width: 80%;
+}
+
+.greetingContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 90px;
+}
+
+#profile {
+    align-self: center;
+}
+
+.greeting {
+    display: grid;
+    grid-template-columns: 75px 1fr;
+}
+
+#greetingText {
+    /* grid-area: 1 / 2 / 3 / 3; */
+    margin: 0px;
+    align-self: center;
+}
+
+#profileName {
+    margin: 0px;
+}
+.headerButtonContainer {
+    align-self: center;
+    justify-self: right;
+}
+
+.headerButton {
+    margin: 20px;
 }
 
 .mainContent {
