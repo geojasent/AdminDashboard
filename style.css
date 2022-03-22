@@ -8,7 +8,7 @@ body {
     width: 100vw;
     display: grid;
     grid-template-columns: 300px 1fr;
-    grid-template-rows: 130px 5fr;
+    grid-template-rows: 150px 5fr;
 }
 
 .sidebar {
@@ -54,19 +54,49 @@ li {
 }
 
 .header {
-    background-color: bisque;
+    display: grid;
+    background-color: white;
+    grid-template-rows: 60px 90px;
     grid-area: 1 / 2 / 2 / 3;
 }
 
 .headerContainer {
     display: grid;
     grid-template-columns: 1fr 250px;
-    height: 40px;
+    height: 50px;
+    padding-top: 10px;
+}
+
+.headerSearch {
+    display: flex;
     align-items: center;
+    padding-left: 10px;
+}
+
+.headerSearch button {
+    border-style: none;
+    background-color: white;
 }
 
 .headerSearch input {
     width: 80%;
+    border-style: none;
+    background-color: rgb(71, 168, 224);
+    border-radius: 20px;
+    height: 25px;
+}
+
+.greeting {
+    align-items: center;
+    padding-left: 10px;
+}
+
+.headerLink {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-right: 10px;
 }
 
 .greetingContainer {
@@ -85,7 +115,6 @@ li {
 }
 
 #greetingText {
-    /* grid-area: 1 / 2 / 3 / 3; */
     margin: 0px;
     align-self: center;
 }
@@ -94,12 +123,22 @@ li {
     margin: 0px;
 }
 .headerButtonContainer {
+    display: flex;
     align-self: center;
     justify-self: right;
 }
 
 .headerButton {
+    display: flex;
     margin: 20px;
+    border-style: none;
+    background-color: rgb(71, 168, 224);
+    color: white;
+    border-radius: 20px;
+    height: 25px;
+    padding: 15px 20px;
+    align-items: center;
+    cursor: pointer;
 }
 
 .mainContent {
@@ -117,9 +156,10 @@ li {
 .cardContent {
     display: grid;
     grid-area: 2 / 1 / 3 / 2;
-    grid-template-columns: repeat(auto-fit, 300px);
+    grid-template-columns: repeat(auto-fit, minmax(300px, .5fr));
     grid-template-rows: repeat(auto-fit, 250px);
     gap: 10px;
+    margin: 0px 15px 0px 0px;
 }
 
 .card {
