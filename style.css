@@ -23,6 +23,7 @@ body {
     grid-template-columns: 60px auto;
     color: white;
     margin: 10px;
+    align-items: center;
 }
 
 #logoImage {
@@ -36,6 +37,7 @@ body {
     grid-template-columns: 50px auto;
     margin: 20px 5px;
     color: white;
+    align-items: center;
 }
 
 .branding{
@@ -44,6 +46,7 @@ body {
     grid-template-columns: 50px auto;
     margin: 20px 5px;
     color: white;
+    align-items: center;
 }
 
 li {
@@ -105,7 +108,7 @@ li {
 
 .cardContainer {
     display: grid;
-    grid-template-columns: 1fr 200px;
+    grid-template-columns: 1fr 250px;
     grid-template-rows: 50px  1fr;
     padding-left: 20px;
     height: 100%;
@@ -156,14 +159,58 @@ h5 {
     display: grid;
     grid-area: 1 / 2 / 3 / 3;
     grid-template-rows: repeat(auto-fit, 400px);
+    margin:10px;
 }
 
 .announcementContainer {
-    display: grid;
-    grid-template-rows: 50px repeat(auto-fit, 100px);
+}
 
+.announcementCardContainer {
+    display: grid;
+    grid-template-rows: repeat(3, 100px);
+    background-color: white;
+    border-radius: 10px;
+    margin-right: 20px;
+    padding: 10px;
 }
 
 .announcementCard {
     font-size: .75em;
+    padding-top: 10px;
+}
+
+.trending {
+    display: grid;
+    grid-template-rows: repeat(3, 50px);
+    grid-template-columns: 50px 1fr;
+    background-color: white;
+    border-radius: 10px;
+    margin-right: 20px;
+    padding: 10px;
+}
+
+.userImageContainer {
+    grid-area: 1 / 1 / 4 / 2;
+    display: grid;
+    grid-template-rows: repeat(4,50px);
+    align-items: center;
+    justify-self: center;
+}
+
+.trendingCard {
+    align-self: center;
+}
+
+.userImage {
+    max-width: 50px;
+}
+
+.user {
+    margin: 0px 0px 0px 5px;
+    font-size: 14px;
+}
+
+.userText {
+    margin: 0px 0px 0px 5px;
+    font-size: 13px;
 }
